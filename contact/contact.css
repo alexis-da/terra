@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #1a1a2e;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  color: #c4a765;
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form,
+.contact-info {
+  flex: 1;
+}
+
+/* Formulaire de contact */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form input[type="submit"] {
+  background-color: white;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"] {
+  background-color: black;
+}
+
+.contact-info h3 {
+  font-size: 1.8em;
+  color: #c4a765;
+  margin-bottom: 15px;
+  margin-left: 15vw;
+  width: 100%;
+  text-align: start;
+}
+
+.contact-info p {
+  font-size: 1.1em;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 15vw;
+  text-align: justify;
+}
+
+
+#logo {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 140px;
+  height: 200px;
+}
+
+.header {
+  background: linear-gradient(90deg, #1a1a2e, #c4a765);
+  color: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+@media (max-width: 936px) {
+  
+  .contact-info h3{
+    width: 100vw;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .contact-info p{
+    width: 100vw;
+    margin-left: 0;
+    text-align: center;
+  }
+
+} 
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    
+  }
+
+  .nav {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+#TERRA {
+  font-family: "Funnel Display";
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-left: 20px;
+}

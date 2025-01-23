@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #25274d;
+  color: white;
+  height: 100%;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.conteneur {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-conteneur {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.logo-image {
+  width: 25%;
+  height: auto;
+}
+
+.presentation,
+.services,
+.equipe,
+.localisation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+  padding-right: 6vw;
+  background-color: #1a1a2e;
+  border-radius: 12px;
+
+  width: 80%;
+  max-width: 1000px;
+  margin: 5vh 0;
+  flex-wrap: wrap;
+}
+
+h1,
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #c4a765;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 15px 0;
+  font-size: 1.4em;
+  padding-left: 20px;
+  position: relative;
+}
+
+.services li::before {
+  color: #ffcc00;
+  position: absolute;
+  left: 0;
+  font-size: 1.8em;
+  top: 0;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 45vw;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+}
+
+.localisation {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 12px;
+
+  margin-top: 30px;
+}
+
+
+.vuebdx:hover {
+  transform: scale(1.05);
+}
+
+.vuebdx {
+  width: 45vw;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .presentation,
+  .services,
+  .equipe,
+  .localisation {
+    padding: 5vw;
+    padding-right: 7vw;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.2em;
+  }
+
+  .services li {
+    font-size: 1.2em;
+  }
+
+  .photo-conteneur {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .presentation,
+  .services,
+  .equipe,
+  .localisation {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    padding-right: 8vw;
+  }
+
+  .photo{
+    width: 60vw;
+  }
+
+  .vuebdx{
+    width: 60vw;
+  }
+
+  h1,
+  h2 {
+    font-size: 2em;
+  }
+
+  p,
+  li {
+    font-size: 1em;
+  }
+
+  .team-photos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-conteneur {
+    width: 80%;
+  }
+
+  .team-photo {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .presentation,
+  .services,
+  .equipe,
+  .localisation {
+    padding: 10px;
+    padding-right: 10vw;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.8em;
+  }
+
+  p,
+  li {
+    font-size: 0.9em;
+  }
+
+  .photo-conteneur {
+    width: 90%;
+  }
+
+  .team-photo {
+    max-width: 150px;
+  }
+}
+
+
+.header {
+  background: linear-gradient(90deg, #1a1a2e, #c4a765);
+  color: white;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+@media (max-width: 936px) {
+  
+  .contact-info h3{
+    width: 100vw;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .contact-info p{
+    width: 100vw;
+    margin-left: 0;
+    text-align: center;
+  }
+
+} 
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+  }
+
+  .nav {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+#TERRA {
+  font-family: "Funnel Display";
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-left: 20px;
+}
