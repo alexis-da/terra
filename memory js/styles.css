@@ -52,7 +52,7 @@ h1{
 
 #button {
     position: absolute;
-    top: 58%;
+    top: 54vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     background-color: #0f3460;
@@ -86,7 +86,7 @@ h1{
   background: linear-gradient(90deg, #1a1a2e, #888);
   color: white;
   width: 100vw;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
@@ -149,9 +149,6 @@ h1{
     flex-direction: column;
   }
 
-  #button{
-    top:65%
-  }
 
   .nav {
     margin-top: 10px;
